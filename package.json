@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.8.2",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
@@ -18,9 +19,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon server",
+    "seed": "node ./config/seed.js"
   },
   "eslintConfig": {
     "extends": [
