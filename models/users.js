@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
 const Schema = mongoose.Schema;
+const bcrypt = require('bcrypt');
 
 const SALT_ROUNDS = 6;
 
@@ -21,6 +21,7 @@ const userSchema = new Schema({
   }
 }, {
   timestamps: true,
+  // Even though it's hashed - don't serialize the password
   toJSON: {
     transform: function(doc, ret) {
       delete ret.password;

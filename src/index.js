@@ -8,11 +8,10 @@ import { createRoot } from 'react-dom/client';
 const container = document.getElementById('app');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 
-
 root.render(
   <React.StrictMode>
     <Router><App /></Router>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
